@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">	
+</head>
+
+<title>Pink World</title>
+<style>
+	body{position: absolute; width: 1500px; background: #e5cfff;}
+	
+	#kikiMusic{position: absolute; left: 20px; top: 40px;}
+	
+	#purpleMoon{position: absolute; right: 750px; top: 10px;}
+	#eye{position: absolute; right: 680px; top: 50px;}
+	#starmoon{position: absolute; left: 650px; top: 200px;}
+	#jewel{position: absolute; right: 800px; top: 250px;}
+	#cuty{position: absolute; right: 900px; top: 300px;}
+	#planet{position: absolute; left: 700px; top: 350px;}
+	#man{position: absolute; right: 500px; top: 400px;}
+	#sheep{position: absolute; left: 100px; top: 500px;}
+	#ufo{position: absolute; left: 750px; top: 250px;}
+
+	#sky{position: absolute; right: 550px; top: 500px;}
+
+</style>
+<body>
+	<img src="p5.gif" id="kikiMusic">
+	<audio id="kiki">
+  	<source src="kiki.mp3" type="audio/mpeg">
+	</audio>
+
+
+		<img src="14-1.gif" id="man">
+		
+		<img src="16.gif" id="purpleMoon">
+
+		<img src="106.gif" id="eye">
+
+		<img src="73.gif" id="starmoon">
+
+		<img src="94.gif" id="jewel">
+
+		<img src="61.gif" id="cuty">
+
+		<img src="11.gif" id="planet">
+
+		<img src="43.png" id="sheep">
+
+		<img src="32.gif" id="ufo">
+
+		<img src="2.gif" id="sky">
+
+<script type="text/javascript">
+	var toggle = "off"
+
+
+		kikiMusic.onclick =function() {
+		if(toggle == "off"){
+		kikiMusic.setAttribute("src","p8.gif")
+		kiki.play();
+		toggle	 = "on";
+		}else{
+			kikiMusic.setAttribute("src","p5.gif")
+			kiki.pause();
+			toggle = "off"
+		}
+	}
+
+
+		purpleMoon.onclick =function() {
+		if(toggle == "off"){
+		purpleMoon.setAttribute("src","77.png")
+		toggle	 = "on";
+		}else{
+			purpleMoon.setAttribute("src","16.gif")
+			toggle = "off"
+		}
+	}
+
+		eye.onclick =function() {
+		if(toggle == "off"){
+		eye.setAttribute("src","102.gif")
+		toggle	 = "on";
+		}else{
+			eye.setAttribute("src","106.gif")
+			toggle = "off"
+		}
+	}
+
+
+		man.onclick =function() {
+		if(toggle == "off"){
+		man.setAttribute("src","97.png")
+		toggle	 = "on";
+		}else{
+			man.setAttribute("src","14-1.gif")
+			toggle = "off"
+		}
+	}
+
+
+		sheep.onclick =function() {
+		if(toggle == "off"){
+		sheep.setAttribute("src","p36.png")
+		toggle	 = "on";
+		}else{
+			sheep.setAttribute("src","43.png")
+			toggle = "off"
+		}
+	}
+
+
+		sky.onclick =function() {
+		if(toggle == "off"){
+		sky.setAttribute("src","2.gif")
+		toggle	 = "on";
+		}else{
+			sky.setAttribute("src","103.gif")
+			toggle = "off"
+		}
+	}
+</script>
+
+</body>
+</html>
