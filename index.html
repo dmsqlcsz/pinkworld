@@ -20,6 +20,7 @@
 	#sheep{position: absolute; left: 100px; top: 500px;}
 	#ufo{position: absolute; left: 750px; top: 250px;}
 	#game{position: absolute; left: 950px; top: 250px;}
+	#sailorMoon{position: absolute; right: 250px; top: 150px;}
 
 	#sky{position: absolute; right: 550px; top: 500px;}
 
@@ -48,6 +49,10 @@
 		<img src="43.png" id="sheep">
 
 		<img src="32.gif" id="ufo">
+
+		<img src="4.gif" id="game">
+
+		<img src="p12.png" id="sailorMoon">
 
 		<img src="2.gif" id="sky">
 
@@ -102,7 +107,7 @@
 
 		sheep.onclick =function() {
 		if(toggle == "off"){
-		sheep.setAttribute("src","p36.png")
+		sheep.setAttribute("src","p4.gif")
 		toggle	 = "on";
 		}else{
 			sheep.setAttribute("src","43.png")
@@ -120,8 +125,8 @@
 			toggle = "off"
 		}
 	}
-		
-			game.onclick =function() {
+
+		game.onclick =function() {
 		if(toggle == "off"){
 		game.setAttribute("src","35.png")
 		toggle	 = "on";
@@ -130,7 +135,29 @@
 			toggle = "off"
 		}
 	}
-		
+
+		ufo.onclick =function() {
+		if(toggle == "off"){
+		ufo.setAttribute("src","57.gif")
+		toggle	 = "on";
+		}else{
+			ufo.setAttribute("src","32.gif")
+			toggle = "off"
+		}
+	}
+
+		sailorMoon.onclick =function() {
+		if(toggle == "off"){
+		sailorMoon.setAttribute("src","p34.png")
+		toggle	 = "on";
+		}else{
+			sailorMoon.setAttribute("src","p12.png")
+			toggle = "off"
+		}
+	}
+
+
+
 </script>
 
 </body>
