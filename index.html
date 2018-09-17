@@ -21,6 +21,7 @@
 	#ufo{position: absolute; left: 750px; top: 250px;}
 	#game{position: absolute; left: 950px; top: 250px;}
 	#sailorMoon{position: absolute; right: 20px; top: 20px;}
+	#mimi{position: absolute; right: 20px; top: 150px;}
 
 	#sky{position: absolute; right: 550px; top: 500px;}
 
@@ -31,7 +32,7 @@
   	<source src="kiki.mp3" type="audio/mpeg">
 	</audio>
 	
-	<img src="p12.png" id="SailorMoon">
+	<img src="p12.png" id="ailorMoon">
 	<audio id="SailorMoonOp">
   	<source src="SailorMoonOp.mp3" type="audio/mpeg">
 	</audio>
@@ -57,7 +58,7 @@
 
 		<img src="4.gif" id="game">
 
-		<img src="p13.png" id="sailorMoon">
+		<img src="p13.png" id="mimi">
 
 		<img src="2.gif" id="sky">
 
@@ -160,13 +161,13 @@
 		}
 	}
 
-		SailorMoon.onclick =function() {
+		sailorMoon.onclick =function() {
 		if(toggle == "off"){
-		SailorMoon.setAttribute("src","p34.gif")
+		sailorMoon.setAttribute("src","p34.gif")
 		SailorMoonOp.play();
 		toggle	 = "on";
 		}else{
-			SailorMoon.setAttribute("src","p12.png")
+			sailorMoon.setAttribute("src","p12.png")
 			SailorMoonOp.pause();
 			toggle = "off"
 		}
