@@ -19,6 +19,7 @@
 	#man{position: absolute; right: 500px; top: 400px;}
 	#sheep{position: absolute; left: 100px; top: 500px;}
 	#ufo{position: absolute; left: 750px; top: 250px;}
+	#game{position: absolute; left: 950px; top: 250px;}
 
 	#sky{position: absolute; right: 550px; top: 500px;}
 
@@ -119,6 +120,17 @@
 			toggle = "off"
 		}
 	}
+		
+			game.onclick =function() {
+		if(toggle == "off"){
+		game.setAttribute("src","35.gif")
+		toggle	 = "on";
+		}else{
+			game.setAttribute("src","4.gif")
+			toggle = "off"
+		}
+	}
+		
 </script>
 
 </body>
